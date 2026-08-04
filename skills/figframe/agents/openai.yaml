@@ -1,0 +1,4 @@
+interface:
+  display_name: "FigFrame"
+  short_description: "128+ scientific plots with journal-ready design and QC"
+  default_prompt: "Use $figframe to design, export, and audit a traceable scientific figure package."

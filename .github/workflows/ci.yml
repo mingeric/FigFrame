@@ -1,0 +1,26 @@
+name: FigFrame renderer CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  circos-and-catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r skills/figframe/requirements.txt
+      - run: python -m unittest discover -s skills/figframe/tests -v
+      - run: python skills/figframe/scripts/test_catalog.py --out-dir /tmp/figframe-catalog --limit 129
+      - run: >-
+          python skills/figframe/scripts/figure_studio.py render --kind circos_lollipop_chord
+          --scores skills/figframe/examples/circos/gene_scores.csv
+          --links skills/figframe/examples/circos/links.csv
+          --sectors skills/figframe/examples/circos/sectors.csv --data-status demo
+          --formats pdf,svg,png --out /tmp/figframe-circos/circos
+      - run: >-
+          python skills/figframe/scripts/qc_figures.py /tmp/figframe-circos
+          --output /tmp/figframe-circos/qc.tsv --json /tmp/figframe-circos/qc.json

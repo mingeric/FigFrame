@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "input_sha256": {
+    "skills/figframe/examples/circos_v2/features.csv": "ff9db7c77278d98744cc24eacd18fb2ff14d48520bbf41e5e7efc79504608fdc",
+    "skills/figframe/examples/circos_v2/links.csv": "50163f91d7816275ca4baabd0bc456db9da4a4fd3590e0adf109d0624898c753",
+    "skills/figframe/examples/circos_v2/sectors.csv": "fbff63d8be3064c51632a17444dab6ca5382478c5accab18d9b2c9321bdc2b5e"
+  },
+  "configuration": {
+    "recipe": "circos_lollipop_chord",
+    "seed": 0,
+    "top_k": 4,
+    "gap_degrees": 2,
+    "start_angle": 0,
+    "link_limit": null,
+    "baseline": 0,
+    "signed_scores": false,
+    "width_mm": 180.0,
+    "label_orientation": "tangent",
+    "max_label_chars": 18,
+    "scale": null,
+    "chord_tension": 0.72,
+    "bundle_strength": 0.025,
+    "data_status": "demo",
+    "inputs": {
+      "features": "skills/figframe/examples/circos_v2/features.csv",
+      "links": "skills/figframe/examples/circos_v2/links.csv",
+      "sectors": "skills/figframe/examples/circos_v2/sectors.csv"
+    },
+    "source_snapshot_sha256": {
+      "features": "ff9db7c77278d98744cc24eacd18fb2ff14d48520bbf41e5e7efc79504608fdc",
+      "links": "50163f91d7816275ca4baabd0bc456db9da4a4fd3590e0adf109d0624898c753",
+      "sectors": "fbff63d8be3064c51632a17444dab6ca5382478c5accab18d9b2c9321bdc2b5e"
+    }
+  },
+  "software": {
+    "python": "3.14.6",
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.4"
+  },
+  "data_status": "demo",
+  "output_sha256": {
+    "skills/figframe/examples/circos_v2/circos_v2_180mm.pdf": "2b5ceabbe41bef377cafe97169bd772d8f2b8763fc577a16d41a3c7a703b54e8",
+    "skills/figframe/examples/circos_v2/circos_v2_180mm.svg": "2b9fd191700ef3d8d1842d9a3ed82ed95d7f1c0218b47cf5f3f8a781a027f6f3",
+    "skills/figframe/examples/circos_v2/circos_v2_180mm.png": "1cd959dce49fe7707281eea4505a3da350fc0408e7c9110c461036b756431988",
+    "skills/figframe/examples/circos_v2/circos_v2_180mm.source_features.csv": "ff9db7c77278d98744cc24eacd18fb2ff14d48520bbf41e5e7efc79504608fdc",
+    "skills/figframe/examples/circos_v2/circos_v2_180mm.source_sectors.csv": "fbff63d8be3064c51632a17444dab6ca5382478c5accab18d9b2c9321bdc2b5e",
+    "skills/figframe/examples/circos_v2/circos_v2_180mm.source_links.csv": "50163f91d7816275ca4baabd0bc456db9da4a4fd3590e0adf109d0624898c753",
+    "skills/figframe/examples/circos_v2/circos_v2_180mm.suppressed_labels.csv": "deadb6ce583bbc3be7a39a4c7cb97e52b87ca8e2b4d29dd0c4917eabc2df3a8e",
+    "skills/figframe/examples/circos_v2/circos_v2_180mm.metadata.json": "a008123cb2d015ae245c7c33fb7845bbb3dba80e68a2d65d7e32fc3ecba02c39",
+    "skills/figframe/examples/circos_v2/circos_v2_180mm.config.yaml": "3081a79121b31b48eef42d24aff7d02be7a73639f80f354abd488d340a9f04a9",
+    "skills/figframe/examples/circos_v2/circos_v2_180mm.qc.json": "dfb5eade3500aa968f6627a0ebea2413328bd365151170145252fc8c03b4c20c"
+  }
+}
